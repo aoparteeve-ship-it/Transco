@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Attendance App</title>
+    <style>
+        img { vertical-align: middle; }
+        li { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+<h1>Student Registration</h1>
+
+<label for="regName">Name:</label>
+<input type="text" id="regName" placeholder="Enter name">
+
+<label for="regSection">Section:</label>
+<input type="text" id="regSection" placeholder="Enter section">
+
+<label for="regPhoto">Upload Photo:</label>
+<input type="file" id="regPhoto" accept="image/*">
+
+<button id="regBtn">Register Student</button>
+
+<hr>
+
+<h1>Daily Attendance</h1>
+
+<label for="stuSelect">Select Student:</label>
+<select id="stuSelect">
+    <option value="">--Select--</option>
+</select>
+
+<button id="markBtn">Mark Attendance</button>
+
+<h2>Today's Attendance (<span id="currentDate"></span>)</h2>
+<ul id="attendanceList"></ul>
+
+<button id="downloadBtn">Download Attendance</button>
+<button id="clearBtn">Clear All</button>
+
+<script src="dailyAttendanceApp.js"></script>
+</body>
+</html>
+
